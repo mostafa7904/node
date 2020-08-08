@@ -156,6 +156,7 @@ The context-aware addon can be structured to avoid global static data by
 performing the following steps:
 * Define a class which will hold per-addon-instance data and which has a static
 member of the form
+
   ```cpp
   static void DeleteInstance(void* data) {
     // Cast `data` to an instance of the class and delete it.
